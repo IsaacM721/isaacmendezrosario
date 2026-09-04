@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isaac Alejandro Mendez Rosario — software developer building useful products for the web.">
+  <title>Isaac Mendez — Software Developer</title>
+  <style>
+    :root { --bg:#0b0b0b; --text:#f1f1f1; --muted:#969696; --line:#242424; --card:#111; --accent:#d8ff3e; --max:980px; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.6; }
+    a { color:inherit; text-decoration:none; } .wrap { width:min(var(--max),calc(100% - 40px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:28px 0; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(11,11,11,.88); backdrop-filter:blur(12px); z-index:10; }
+    .logo { font-weight:800; letter-spacing:-.04em; } nav .links { display:flex; gap:24px; color:var(--muted); font-size:14px; } nav .links a:hover { color:var(--text); }
+    .hero { padding:120px 0 100px; border-bottom:1px solid var(--line); } .eyebrow { color:var(--accent); font-size:13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { font-size:clamp(54px,10vw,112px); line-height:.92; letter-spacing:-.075em; margin:22px 0 30px; max-width:900px; } .hero p { color:var(--muted); max-width:650px; font-size:19px; }
+    .cta { display:flex; gap:12px; margin-top:35px; flex-wrap:wrap; } .button { display:inline-flex; padding:11px 17px; border:1px solid #333; border-radius:999px; font-size:14px; transition:.2s; } .button.primary { background:var(--text); color:var(--bg); border-color:var(--text); } .button:hover { transform:translateY(-2px); }
+    section { padding:90px 0; border-bottom:1px solid var(--line); } .section-head { display:flex; justify-content:space-between; gap:30px; margin-bottom:45px; } .section-head h2 { margin:0; font-size:32px; letter-spacing:-.04em; } .section-head span { color:var(--muted); font-size:13px; }
+    .about { display:grid; grid-template-columns:1fr 1fr; gap:60px; } .about p { color:#c8c8c8; font-size:17px; }
+    .project { display:grid; grid-template-columns:80px 1fr auto; gap:25px; align-items:start; padding:28px 0; border-top:1px solid var(--line); } .project:last-child { border-bottom:1px solid var(--line); }
+    .number { color:var(--muted); font-size:13px; } .project h3 { margin:0 0 7px; font-size:23px; letter-spacing:-.03em; } .project p { margin:0; color:var(--muted); max-width:620px; }
+    .tags { margin-top:14px; display:flex; gap:7px; flex-wrap:wrap; } .tag { font-size:11px; border:1px solid #303030; border-radius:999px; padding:4px 9px; color:#aaa; } .arrow { color:var(--muted); font-size:20px; }
+    .experience { display:grid; grid-template-columns:180px 1fr; gap:45px; } .experience .meta { color:var(--muted); font-size:13px; } .experience h3 { margin:0 0 5px; } .experience p { color:#bbb; margin-top:7px; }
+    .skills { display:flex; flex-wrap:wrap; gap:9px; } .skill { padding:9px 13px; border:1px solid #2b2b2b; border-radius:8px; color:#ccc; background:var(--card); font-size:14px; }
+    .contact h2 { font-size:clamp(42px,7vw,76px); letter-spacing:-.06em; max-width:760px; line-height:.98; margin:0 0 30px; } footer { padding:30px 0 50px; display:flex; justify-content:space-between; color:var(--muted); font-size:13px; }
+    @media (max-width:700px) { nav .links { display:none; } .hero { padding:85px 0 70px; } section { padding:65px 0; } .about,.experience { grid-template-columns:1fr; gap:15px; } .project { grid-template-columns:40px 1fr; } .project .arrow { display:none; } footer { flex-direction:column; gap:10px; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="logo" href="#">IM.</a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+<main>
+<header class="hero"><div class="eyebrow">Software Developer · Dominican Republic</div><h1>I build things<br>for the web.</h1><p>I'm Isaac Alejandro Mendez Rosario, a 21-year-old developer focused on turning ideas into useful products. I like learning by building — from marketplaces and content platforms to data-driven tools and experiments.</p><div class="cta"><a class="button primary" href="#work">See my work ↓</a><a class="button" href="https://github.com/IsaacM721" target="_blank" rel="noopener">GitHub ↗</a><a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></div></header>
+<section id="work"><div class="section-head"><h2>Selected work</h2><span>01 — 06</span></div>
+<article class="project"><div class="number">01</div><div><h3>SubAutosRD</h3><p>A vehicle marketplace concept focused on bringing listings, discovery and automotive commerce into one web experience.</p><div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Web</span><span class="tag">Marketplace</span></div></div><div class="arrow">↗</div></article>
+<article class="project"><div class="number">02</div><div><h3>Motores.do</h3><p>A motorcycle marketplace project exploring search, listings, SEO and the infrastructure required to grow a niche marketplace.</p><div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">SEO</span><span class="tag">Cloudflare</span></div></div><div class="arrow">↗</div></article>
+<article class="project"><div class="number">03</div><div><h3>TuristeandoRD</h3><p>A tourism-oriented web project built around discovering places and experiences in the Dominican Republic.</p><div class="tags"><span class="tag">Web Development</span><span class="tag">Tourism</span><span class="tag">SEO</span></div></div><div class="arrow">↗</div></article>
+<article class="project"><div class="number">04</div><div><h3>NoticiasDM</h3><p>A news publishing project exploring content architecture, discoverability and scalable web publishing.</p><div class="tags"><span class="tag">Web</span><span class="tag">Content</span><span class="tag">SEO</span></div></div><div class="arrow">↗</div></article>
+<article class="project"><div class="number">05</div><div><h3>Lomisport</h3><p>A sports directory/application project using modern web and cloud technologies to organize sports information.</p><div class="tags"><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">JavaScript</span></div></div><div class="arrow">↗</div></article>
+<article class="project"><div class="number">06</div><div><h3>Corporate Electrical System</h3><p>University engineering project: conceptual electrical design for a five-level corporate building, including load classification, demand estimation, transformer sizing, emergency generation, UPS and protection.</p><div class="tags"><span class="tag">Engineering</span><span class="tag">Systems Thinking</span><span class="tag">Power</span></div></div><div class="arrow">↗</div></article>
+</section>
+<section id="about"><div class="section-head"><h2>About</h2><span>How I think</span></div><div class="about"><div><p>I’m interested in the space between software, business and real-world problems. Instead of only following tutorials, I learn by trying to turn ideas into products people could actually use.</p></div><div><p>My background has pushed me toward programming, web development and entrepreneurship. I’m looking for opportunities where I can contribute as a junior developer, learn from experienced engineers, and gradually take on bigger technical problems.</p></div></div></section>
+<section id="experience"><div class="section-head"><h2>Experience</h2><span>Building in public</span></div><div class="experience"><div class="meta">2024 — Present</div><div><h3>Independent Developer / Builder</h3><p>Built and experimented with websites, marketplaces, directories and digital products. Worked across frontend, backend, databases, hosting, SEO and product strategy while learning through hands-on projects.</p></div></div></section>
+<section><div class="section-head"><h2>Toolkit</h2><span>Technologies I work with</span></div><div class="skills"><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">React</span><span class="skill">Next.js</span><span class="skill">Vite</span><span class="skill">Tailwind CSS</span><span class="skill">PHP</span><span class="skill">Laravel</span><span class="skill">Node.js</span><span class="skill">MySQL</span><span class="skill">PostgreSQL</span><span class="skill">Prisma</span><span class="skill">Firebase</span><span class="skill">Supabase</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">Docker</span><span class="skill">Cloudflare</span><span class="skill">Google Cloud</span><span class="skill">SEO</span></div></section>
+<section id="contact" class="contact"><div class="eyebrow">Have a project or opportunity?</div><h2>Let’s build something worth talking about.</h2><div class="cta"><a class="button primary" href="mailto:hello@isaacmendez.com">Email me ↗</a><a class="button" href="https://github.com/IsaacM721" target="_blank" rel="noopener">GitHub ↗</a></div></section>
+</main><footer><span>© 2026 Isaac Mendez</span><span>Designed & built with HTML/CSS</span></footer>
+</div>
+</body>
+</html>
